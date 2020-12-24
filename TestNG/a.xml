@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite" parallel="classes">
+    <test name="Tests">
+        <classes>
+         <!--   <class name="pkgTestNG.Activity_1"/>-->
+         <!--  <class name="pkgTestNG.Activity_6"/>-->
+            <class name="suiteExample.DemoOne"/>
+            <class name="suiteExample.DemoTwo"/>
+           <!-- <class name="session9.Activity5"/>-->
+           <!-- <class name="session9.Activity6"/> -->
+        </classes>
+    </test>
+</suite>
+
