@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="8f37f412-6876-4847-9e81-a8351f9f570a" name="Salesforce_Project 4 TestSuite 1" xmlns:con="http://eviware.com/soapui/config">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="8f439d5f-053a-4690-8f97-9f5886278edd" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Project 4 TestCase 1" searchProperties="true" timeout="0">
+      <con:settings><con:setting id="IncludeOverview">true</con:setting><con:setting id="IncludeResults">true</con:setting><con:setting id="FlowLayout">false</con:setting><con:setting id="ErrorDetails">true</con:setting><con:setting id="IncludeCoverage">true</con:setting><con:setting id="GeneratableJUnitReport@Style">Single Page (Print)</con:setting><con:setting id="GeneratableJUnitReport@Folder">C:\Users\VENKATESHAMKASANAGOT\Documents\IBM Training\SDET\API\Project Docs\Sales Force Actvity</con:setting></con:settings>
+      
+      
+      <con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="properties" name="Properties" id="f53b14a6-f36c-4afe-b41b-23d3c6a3abdc"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>SessionId</con:name><con:value>00D5g000002ufrl!ARQAQO1pOR79FnEdswGYBZKr_gwJj3RKp4CCS5wG22Yt5yRLDUt83qoO7Ba0iTc3ajticPhvbdMA_MpPc7gUUmtElc71.x8w</con:value></con:property><con:property><con:name>serverURl</con:name><con:value>https://ibm-2f4-dev-ed.my.salesforce.com/services/Soap/c/50.0</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" id="466b618f-eea0-4e7d-a13f-c42f8b440383" name="SoapBinding login-login Request">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>SoapBinding</con:interface>
+          <con:operation>login</con:operation>
+          <con:request name="SoapBinding login-login Request" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="6e61e171-4c15-4633-ac73-e5e3f3ab9b0b">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://ibm-2f4-dev-ed.my.salesforce.com/services/Soap/c/50.0</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+    </soapenv:Header>
+   <soapenv:Body>
+      <urn:login>
+         <urn:username>kasanagottu@gmail.com</urn:username>
+         <urn:password>Pranika@1D0qAUWEw3tRiuvpg5F5mdb6ge</urn:password>
+      </urn:login>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="2c7023a6-b41f-4188-9e93-457c17a872c1" name="SOAP Response"/>
+            <con:assertion type="Valid HTTP Status Codes" id="e58055b9-fa5a-4be0-8c5f-776c6e7f627e" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Schema Compliance" id="4cff14ce-bc9b-4d9d-8bdd-bcc54f27a53c" name="Schema Compliance">
+              <con:configuration/>
+            </con:assertion>
+            <con:assertion type="SOAP Fault Assertion" id="c3cc31dd-9b62-458a-9510-d10869174e40" name="Not SOAP Fault"/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/loginRequest"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <con:testStep type="request" id="5738cb86-cc21-4ef4-9e0b-7f8c22b8dc9d" name="SoapBinding create-create Request">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>SoapBinding</con:interface>
+          <con:operation>create</con:operation>
+          <con:request name="SoapBinding create-create Request" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="42215200-3655-4a01-9a84-fa15ff914604">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://ibm-2f4-dev-ed.my.salesforce.com/services/Soap/c/50.0</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com" xmlns:urn1="urn:sobject.enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:SessionHeader>
+         <urn:sessionId>${Properties#SessionId}</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:create>
+         <!--Zero or more repetitions:-->
+         <urn:sObjects xsi:type="urn1:Account" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--Zero or more repetitions:-->
+            <Name>Sample SOAP Account</Name>
+            <Industry>Agriculture</Industry>
+            <Type>Prospect</Type>
+         </urn:sObjects>
+      </urn:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="73027874-da41-4813-b5d4-8a1343499db2" name="SOAP Response"/>
+            <con:assertion type="Valid HTTP Status Codes" id="45234dbe-50ed-486b-98a9-ef04933d55c8" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Schema Compliance" id="430ff885-e62f-4399-a5d2-d2c8a5c3b016" name="Schema Compliance">
+              <con:configuration/>
+            </con:assertion>
+            <con:assertion type="SOAP Fault Assertion" id="10703906-87b2-49e3-9074-2a2efab8f567" name="Not SOAP Fault"/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/createRequest"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="PropertyTransfer 1" id="3736bac4-5125-4c85-9829-09dfd664d6a7"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" entitize="false" transferToAll="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>SoapBinding create-create Request</con:sourceStep><con:sourcePath>declare namespace ns1='urn:enterprise.soap.sforce.com';
+//ns1:createResponse[1]/ns1:result[1]/ns1:id[1]</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>SoapBinding delete-delete Request</con:targetStep><con:targetPath>declare namespace urn='urn:enterprise.soap.sforce.com';
+//urn:delete[1]/urn:ids[1]</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="4db5c85c-8203-4e96-937d-37bb460cba2b" name="SoapBinding delete-delete Request">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>SoapBinding</con:interface>
+          <con:operation>delete</con:operation>
+          <con:request name="SoapBinding delete-delete Request" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="c9445df7-54ec-47f1-a6bb-0347995e17b3">
+            <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://ibm-2f4-dev-ed.my.salesforce.com/services/Soap/c/50.0</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:SessionHeader>
+         <urn:sessionId>${Properties#SessionId}</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:delete>
+         <!--Zero or more repetitions:-->
+         <urn:ids>0015g000002dva2AAA</urn:ids>
+      </urn:delete>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="5b3eb973-bbfa-405c-8b6e-5722df89646f" name="SOAP Response"/>
+            <con:assertion type="Valid HTTP Status Codes" id="79c8bd3c-7d01-475f-bb79-670f8068daf0" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Schema Compliance" id="8f2c9c8e-3714-47f4-9057-c93aba8687c7" name="Schema Compliance">
+              <con:configuration/>
+            </con:assertion>
+            <con:assertion type="SOAP Fault Assertion" id="a503d3b4-fba1-414a-ab1d-0729d75916b4" name="Not SOAP Fault"/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/deleteRequest"/>
+          <con:wsrmConfig version="1.2"/></con:request>
+        </con:config>
+      </con:testStep>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <con:properties/>
+      <con:reportParameters/>
+    <con:breakPoints><con:testStepId>5738cb86-cc21-4ef4-9e0b-7f8c22b8dc9d</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>4db5c85c-8203-4e96-937d-37bb460cba2b</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
